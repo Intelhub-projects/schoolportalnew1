@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Score Input</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="print" href="printable.css"> </head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <img src="icon.png" alt="Intelhub Info Tech Logo" id="logo">
+                <h1>Intelhub EduPortal</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="teacher-login.html">Teacher Login</a></li>
+                    <li><a href="login.html">Student Login</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <h1>Student Score Input</h1>
+
+        <div class="form-group">
+            <label for="session">Session:</label>
+            <select id="session">
+                <option value="">Select Session</option>
+                <option value="2023/2024">2023/2024</option>
+                <option value="2024/2025">2024/2025</option>
+                <option value="2025/2026">2025/2026</option>
+                <option value="2026/2027">2026/2027</option>
+                </select>
+        </div>
+
+        <div class="form-group">
+            <label for="term">Term:</label>
+            <select id="term">
+                <option value="">Select Term</option>
+                <option value="First Term">First Term</option>
+                <option value="Second Term">Second Term</option>
+                <option value="Third Term">Third Term</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="class">Class:</label>
+            <select id="class">
+                <option value="">Select Class</option>
+                </select>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <select id="name">
+                <option value="">Select Name</option>
+                </select>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <select id="department">
+                <option value="">Select Department</option>
+                <option value="Science">Science</option>
+                <option value="Arts">Arts</option>
+                <option value="Commercial">Commercial</option>
+                <option value="Gold">Gold</option>
+                <option value="Diamond">Diamond</option>            
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="image">Image:</label>
+            <input type="file" id="image" accept=".png,.jpeg,.jpg">
+        </div>
+
+        <div class="form-group">
+            <label for="attendance">Attendance:</label>
+            <input type="number" id="attendance" min="0">
+        </div>
+
+        <div class="form-group">
+            <label for="comment">Performance Comment:</label>
+            <select id="comment">
+                <option value="Excellent performance.">Excellent performance.</option>
+                <option value="Very good performance.">Very good performance.</option>
+                <option value="Good performance.">Good performance.</option>
+                <option value="Fair performance.">Fair performance.</option>
+                <option value="Needs improvement.">Needs improvement.</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="attitudeComment">Attitude Comment:</label>
+            <select id="attitudeComment">
+                <option value="">Select Attitude Comment</option>
+                <option value="Shows great enthusiasm for learning.">Shows great enthusiasm for learning.</option>
+                <option value="Consistently participates in class.">Consistently participates in class.</option>
+                <option value="Demonstrates strong leadership skills.">Demonstrates strong leadership skills.</option>
+                <option value="Works well with others.">Works well with others.</option>
+                <option value="Is respectful to teachers and peers.">Is respectful to teachers and peers.</option>
+                <option value="Completes assignments on time.">Completes assignments on time.</option>
+                <option value="Stays focused and avoids distractions.">Stays focused and avoids distractions.</option>
+                <option value="Shows good problem-solving skills.">Shows good problem-solving skills.</option>
+                <option value="Is highly motivated to learn.">Is highly motivated to learn.</option>
+                <option value="Seeks help when needed.">Seeks help when needed.</option>
+                <option value="Takes initiative in learning.">Takes initiative in learning.</option>
+                <option value="Is well-organized and prepared.">Is well-organized and prepared.</option>
+                <option value="Shows improvement in effort.">Shows improvement in effort.</option>
+                <option value="Is attentive and follows instructions.">Is attentive and follows instructions.</option>
+                <option value="Displays a positive attitude towards school.">Displays a positive attitude towards school.</option>
+                <option value="Needs to improve focus in class.">Needs to improve focus in class.</option>
+                <option value="Could benefit from more active participation.">Could benefit from more active participation.</option>
+                <option value="Should work on timely submission of assignments.">Should work on timely submission of assignments.</option>
+                <option value="Needs to work on teamwork skills.">Needs to work on teamwork skills.</option>
+                <option value="Is encouraged to ask more questions.">Is encouraged to ask more questions.</option>
+                <option value="Would benefit from improved organizational skills.">Would benefit from improved organizational skills.</option>
+                <option value="Shows potential but needs more effort.">Shows potential but needs more effort.</option>
+                <option value="Needs to improve respect towards others.">Needs to improve respect towards others.</option>
+                <option value="Is encouraged to seek help when facing challenges.">Is encouraged to seek help when facing challenges.</option>
+                <option value="Should focus on reducing distractions.">Should focus on reducing distractions.</option>
+            </select>
+        </div>
+
+        <div id="subjectScores">
+            </div>
+
+        <button id="calculate">Calculate & Save</button>
+
+        <div id="results" style="display:none;">
+            <h2>Report Card</h2>
+            <div id="reportCard"></div>
+            <button id="printReport">Print Report</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

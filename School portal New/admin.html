@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <img src="icon.png" alt="Intelhub Info Tech Logo" id="logo">
+                <h1>Intelhub EduPortal</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="teacher-login.html">Teacher Login</a></li>
+                    <li><a href="login.html">Student Login</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>Admin Page</h1>
+
+        <div id="adminAuth">
+            <label for="adminPassword">Admin Password:</label>
+            <input type="password" id="adminPassword">
+            <button id="adminLogin">Login</button>
+            <p id="loginMessage"></p>
+        </div>
+
+        <div id="adminContent" style="display:none;">
+            <button id="accessTeacherLoginPage">Access Teacher Login Page</button>
+
+            <h2>Manage Teachers</h2>
+            <div id="addTeacherForm">
+                <label for="teacherName">Teacher Name:</label>
+                <input type="text" id="teacherName" required>
+                <label for="teacherClass">Class:</label>
+                <select id="teacherClass">
+                    <option value="">Select Class</option>
+                    <option value="Class 1">Class 1</option>
+                    <option value="Class 2">Class 2</option>
+                    <option value="Class 3">Class 3</option>
+                    <option value="Class 4">Class 4</option>
+                    <option value="Class 5">Class 5</option>
+                    <option value="Class 6">Class 6</option>
+                    <option value="Class 7">Class 7</option>
+                    <option value="Class 8">Class 8</option>
+                    <option value="Class 9">Class 9</option>
+                    <option value="Class 10">Class 10</option>
+                    <option value="Class 11">Class 11</option>
+                    <option value="Class 12">Class 12</option>
+                </select>
+                <button id="addTeacher">Add Teacher</button>
+                <p id="addTeacherMessage"></p>
+                <ul class="nav-links"><li><nav><a href="CBTNEW/admin.html">SET QUESTIONS</a></nav></li> </ul>
+            </div>
+
+            <table id="teacherTable">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Class</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <h2>Manage Student Names</h2>
+            <div id="class-forms-container">
+            </div>
+            <button id="saveStudentNames">Save Student Names</button>
+            <p id="saveMessage"></p>
+
+            <h2>Approve Student Results</h2>
+            <table id="resultsTable">
+                <thead>
+                    <tr>
+                        <th>Session</th>
+                        <th>Term</th>
+                        <th>Class</th>
+                        <th>Student Name</th>
+                        <th>Department</th>
+                        <th>Total Score</th>
+                        <th>Average Score</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <h2>Student Passwords</h2>
+            <table id="passwordTable">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+
+            <div id="csvDataDisplay">
+                <h2>Class CSV Data</h2>
+                <button id="downloadAllCSV">Download All CSV</button>
+               <!-- <div id="csvPreviews"></div> -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="admin.js"></script>
+</body>
+</html>

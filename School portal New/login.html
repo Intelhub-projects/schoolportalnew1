@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <img src="icon.png" alt="Intelhub Info Tech Logo" id="logo">
+                <h1>Intelhub EduPortal</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="teacher-login.html">Teacher Login</a></li>
+                    <li><a href="login.html">Student Login</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                    <li><a href="CBTNEW/index.html">TAKE TEST</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>Student Login</h1>
+        <div id="studentLogin">
+            <label for="studentName">Student Name:</label>
+            <select id="studentName">
+                <option value="">Select Name</option>
+            </select>
+
+            <label for="studentPassword">Password:</label>
+            <input type="password" id="studentPassword">
+
+            <button id="studentLoginBtn">Login</button>
+            <p id="studentLoginMessage"></p>
+        </div>
+
+        <div id="studentResult" style="display:none;">
+            <h2>Your Result</h2>
+            <div id="studentReportCard"></div>
+            <button id="printStudentReport">Print Report</button>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
